@@ -2,7 +2,7 @@
 
 A web-based LDAP testing utility that allows users to test LDAP server connections and perform basic directory operations.
 
-![LDAP Test Tool Screenshot](docs/screenshot.png)
+![LDAP Test Tool Screenshot](docs/Screenshot.png)
 
 ## Features
 
