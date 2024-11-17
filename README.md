@@ -29,7 +29,7 @@ A web-based LDAP testing utility that allows users to test LDAP server connectio
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/ldap-test-tool.git
+git clone https://github.com/xhorizont/ldap-test-tool.git
 cd ldap-test-tool
 ```
 
@@ -92,7 +92,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 If you're having issues, please:
 1. Check the [FAQ](docs/FAQ.md)
-2. Search existing [issues](https://github.com/yourusername/ldap-test-tool/issues)
+2. Search existing [issues](https://github.com/xhorizont/ldap-test-tool.git)
 3. Create a new issue if your problem persists
 
 ## Security
