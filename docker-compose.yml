@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+  ldap-test-tool:
+    build: .
+    container_name: ldap-test-tool
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "--spider", "http://localhost:3000"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+  # Optional development service
+  ldap-test-tool-dev:
+    build:
+      context: .
+      target: builder
+    container_name: ldap-test-tool-dev
+    ports:
+      - "3001:3000"
+    environment:
+      - NODE_ENV=development
+      - PORT=3000
+    volumes:
+      - ./src:/app/src
+      - ./public:/app/public
+    command: npm run dev 
